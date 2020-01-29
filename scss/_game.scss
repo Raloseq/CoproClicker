@@ -1,0 +1,21 @@
+.header-app {
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+.game-main {
+    .money {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .money-gained {
+            
+        }
+        .money-icon {
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

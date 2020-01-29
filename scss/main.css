@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.home-main {
+  height: 100vh;
+  width: 100%;
+  background-color: #5CAAFD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.home-main .main-text {
+  font-size: 40px;
+  color: black;
+}
+
+.home-main .main-btn {
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+  border: 0;
+  border: 2px solid #00941B;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.home-main .main-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.home-main .main-btn .btn-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.header-app {
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.game-main .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.game-main .money .money-icon {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
