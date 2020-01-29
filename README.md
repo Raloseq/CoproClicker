@@ -1,0 +1,2 @@
+# CoproClicker
+Simple clicker game
