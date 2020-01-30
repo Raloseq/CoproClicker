@@ -2,11 +2,64 @@ const btnEarnMoney = document.querySelector('.earn-money');
 const gainedMoney = document.querySelector('.current-money');
 const currentWorkPosition = document.querySelector('.current-position');
 const clear = document.querySelector('.clear');
+const priceFirst = document.querySelector('.price-upgrade');
 const firstUpgrade = document.querySelector('.first-upgrade');
-const upgrades = {
-    first: false,
-}
+let items = [
+    {
+        name: "Create report",
+        price: 100,
+        amount: 0
+    },
+    {
+        name: "Sell product",
+        price: 150,
+        amount: 0
+    },
+    {
+        name: "Get client",
+        price: 200,
+        amount: 0
+    },
+    {
+        name: "Create product",
+        price: 250,
+        amount: 0
+    },
+    {
+        name: "Export product",
+        price: 300,
+        amount: 0
+    }
+]
+let upgrades = [
+    {
+        name: "Knowledge",
+        price: 150,
+        status: false
+    },
+    {
+        name: "Customer",
+        price: 200,
+        status: false
+    },
+    {
+        name: "Leadership",
+        price: 250,
+        status: false
+    },
+    {
+        name: "Own Product",
+        price: 300,
+        status: false
+    },
+    {
+        name: "To The World",
+        price: 350,
+        status: false
+    }
+]
 let money = 0;
+let moneyPerSecond = 0;
 const workPosition = {
     first: "Stażysta",
     second: "Pracownik",
@@ -16,43 +69,42 @@ const workPosition = {
 }
 // CLICK GAME
 btnEarnMoney.addEventListener('click',()=>{
-    if(upgrades.first) {
-        money = money + 2;
-        gainedMoney.textContent = money;
-    } else {
-        money++;
-        gainedMoney.textContent = money;
-    }
+    money++;
+    gainedMoney.textContent = money;
 });
+// UPGRADES
 firstUpgrade.addEventListener('click',()=>{
-    if(money - 10 < 0) {
-        alert("Za malo kasy")
-    } else {
-        money = money - 10;
-        upgrades.first = true;
-        gainedMoney.textContent = money;
-        console.log(upgrades.first)
-    }
+    money = money - 10;
+    items[0].price *= 1.1;
+    items[0].amount++;
 });
+console.log(items[0]);
 // LOAD SAVE
 const load = () => {
-    if(localStorage.getItem('money')) {
-        money = localStorage.getItem('money');
-        gainedMoney.textContent = money;
-    } else {
-        money = 0;
-        gainedMoney.textContent = 0;
-    }
+    money = localStorage.getItem('money');
+    moneyPerSecond = localStorage.getItem('moneyPerSecond');
+    items = JSON.parse(localStorage.getItem('items'));
+    upgrades = JSON.parse(localStorage.getItem('upgrades'));
+    gainedMoney.textContent = money;
  }
  load();
 
 clear.addEventListener('click',()=>{
     localStorage.removeItem('money');
+    localStorage.removeItem('moneyPerSecond');
+    localStorage.removeItem('items');
+    localStorage.removeItem('upgrades');
+    items[0].price = 100;
+    items[0].amount = 0;
     money = 0;
     gainedMoney.textContent = money;
+    
 });
 const save = setInterval(()=>{
     localStorage.setItem('money',money);
+    localStorage.setItem('moneyPerSecond',moneyPerSecond);
+    localStorage.setItem('items',JSON.stringify(items));
+    localStorage.setItem('upgrades',JSON.stringify(upgrades));
 },2000);
 
 // WORK POSITION

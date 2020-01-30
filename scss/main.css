@@ -48,13 +48,15 @@
   color: white;
 }
 
-.header-app {
-  text-align: center;
-  font-size: 10px;
-  padding: 10px;
+body {
+  background-color: #617be3;
+  color: white;
 }
 
-.game-main .money {
+body .header-app {
+  text-align: center;
+  font-size: 15px;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,16 +66,208 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.game-main .money .money-icon {
+body .game-main .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .game-main .money .money-gained-info {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .game-main .money .money-gained-info .money-icon {
   margin-left: 10px;
   width: 40px;
   height: 40px;
+}
+
+body .game-main .money .money-click-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+body .game-main .clicker {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .game-main .clicker .earn-money {
+  padding: 20px;
+  border-radius: 50px;
+  width: 80%;
+  background-color: transparent;
+  border: 2px solid #4a69bb;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+body .game-main .item-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .game-main .item-shop .shop-heading {
+  font-size: 30px;
+}
+
+body .game-main .item-shop .upgrades {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .game-main .item-shop .upgrades .upgrade-cart {
+  width: 100%;
+  margin: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .game-main .item-shop .upgrades .upgrade-cart .upgrade-name {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+body .game-main .item-shop .upgrades .upgrade-cart .upgrade-icon {
+  width: 80px;
+  height: 80px;
+}
+
+body .game-main .item-shop .upgrades .upgrade-cart .upgrade-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+
+body .game-main .item-shop .upgrades .upgrade-cart .upgrade-btn {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #617be3;
+  background-color: #4a69bb;
+  font-size: 20px;
+  color: white;
+}
+
+body .app-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  clear: both;
+  padding: 30px;
+}
+
+body .app-footer .clear {
+  width: 70%;
+  padding: 8px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #4a69bb;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+body .app-footer .clear:hover {
+  color: white;
+  background-color: #4a69bb;
 }
 
 *, *:after, *:before {

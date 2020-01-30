@@ -1,21 +1,128 @@
-.header-app {
-    text-align: center;
-    font-size: 10px;
-    padding: 10px;
-}
-.game-main {
-    .money {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        .money-gained {
-            
+@import '_mixin.scss';
+
+body {
+    background-color: #617be3;
+    color: white;
+
+    .header-app {
+        text-align: center;
+        font-size: 15px;
+        padding: 50px;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    .game-main {
+
+        .money {
+            @include flex-center;
+            flex-direction: column;
+
+            .money-gained-info {
+                width: 100%;
+                height: 100%;
+                @include flex-center;
+
+                .money-icon {
+                    margin-left: 10px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .money-click-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 30px;
+            }
         }
-        .money-icon {
-            margin-left: 10px;
-            width: 40px;
-            height: 40px;
+
+        .clicker {
+            margin: 40px 0;
+            @include flex-center;
+
+            .earn-money {
+                padding: 20px;
+                border-radius: 50px;
+                width: 80%;
+                background-color: transparent;
+                border: 2px solid #4a69bb;
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .item-shop {
+            @include flex-center;
+            flex-direction: column;
+            .shop-heading {
+                font-size: 30px;
+            }
+            .upgrades {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                .upgrade-cart {
+                    width: 100%;
+                    margin: 10px 20px;
+                    @include flex-center;
+                    flex-direction: column;
+                    .upgrade-name {
+                        font-size: 20px;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    .upgrade-icon {
+                        width: 80px;
+                        height: 80px;
+                        
+                    }
+                    .upgrade-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+                        margin: 0 auto;
+                        width: 80%;
+                        padding: 20px;
+                    }
+                    .upgrade-btn {
+                        width: 100%;
+                        padding: 15px;
+                        border: 2px solid #617be3;
+                        background-color: #4a69bb;
+                        font-size: 20px;
+                        color: white;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .app-footer {
+        @include flex-center;
+        clear: both;
+        padding: 30px;
+        .clear {
+            width: 70%;
+            padding: 8px;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            border: 2px solid #4a69bb;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: white;
+                background-color: #4a69bb;
+            }
         }
     }
 }
