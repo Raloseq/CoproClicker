@@ -1,0 +1,43 @@
+const btnEarnMoney = document.getElementById("btn-earn-money");
+const gainedMoney = document.getElementById("gained-money");
+const doubleMPC = document.getElementById("double-mpc");
+const increaseMPS = document.getElementById("increase-mps");
+
+let gameMoney = {
+  money: 0,
+  moneyPerClick: 1,
+  moneyPerSecond: 0
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const gameMoneyLS = JSON.parse(localStorage.getItem("money"));
+
+  if (gameMoneyLS) {
+    gameMoney = gameMoneyLS;
+    gainedMoney.textContent = gameMoneyLS.money;
+  }
+});
+
+btnEarnMoney.addEventListener("click", () => {
+  gameMoney.money += gameMoney.moneyPerClick;
+  gainedMoney.textContent = gameMoney.money;
+});
+
+doubleMPC.addEventListener("click", () => {
+  gameMoney.moneyPerClick *= 2;
+});
+
+increaseMPS.addEventListener("click", () => {
+  gameMoney.moneyPerSecond++;
+});
+
+setInterval(() => {
+  gameMoney.money += gameMoney.moneyPerSecond;
+  gainedMoney.textContent = gameMoney.money;
+}, 1000);
+
+setInterval(() => {
+  localStorage.setItem("money", JSON.stringify(gameMoney));
+}, 1000);
+
+// localStorage.clear();

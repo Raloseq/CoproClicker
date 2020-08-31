@@ -10,6 +10,10 @@ body {
         padding: 50px;
         @include flex-center;
         flex-direction: column;
+        .heading {
+            font-size: 40px;
+            margin: 0 0 30px 0;
+        }
     }
 
     .game-main {
@@ -62,28 +66,28 @@ body {
             .shop-heading {
                 font-size: 30px;
             }
-            .upgrades {
+            .items {
                 width: 80%;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                .upgrade-cart {
+                .item-cart {
                     width: 100%;
                     margin: 10px 20px;
                     @include flex-center;
                     flex-direction: column;
-                    .upgrade-name {
+                    .item-name {
                         font-size: 20px;
                         text-align: center;
                         padding: 10px;
                     }
-                    .upgrade-icon {
+                    .item-icon {
                         width: 80px;
                         height: 80px;
                         
                     }
-                    .upgrade-info {
+                    .item-info {
                         display: flex;
                         justify-content: space-between;
                         align-content: center;
@@ -91,7 +95,11 @@ body {
                         width: 80%;
                         padding: 20px;
                     }
-                    .upgrade-btn {
+                    .item-description {
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+                    .item-btn {
                         width: 100%;
                         padding: 15px;
                         border: 2px solid #617be3;

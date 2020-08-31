@@ -72,6 +72,11 @@ body .header-app {
           flex-direction: column;
 }
 
+body .header-app .heading {
+  font-size: 40px;
+  margin: 0 0 30px 0;
+}
+
 body .game-main .money {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,7 +175,7 @@ body .game-main .item-shop .shop-heading {
   font-size: 30px;
 }
 
-body .game-main .item-shop .upgrades {
+body .game-main .item-shop .items {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +192,7 @@ body .game-main .item-shop .upgrades {
           align-items: center;
 }
 
-body .game-main .item-shop .upgrades .upgrade-cart {
+body .game-main .item-shop .items .item-cart {
   width: 100%;
   margin: 10px 20px;
   display: -webkit-box;
@@ -205,18 +210,18 @@ body .game-main .item-shop .upgrades .upgrade-cart {
           flex-direction: column;
 }
 
-body .game-main .item-shop .upgrades .upgrade-cart .upgrade-name {
+body .game-main .item-shop .items .item-cart .item-name {
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
 
-body .game-main .item-shop .upgrades .upgrade-cart .upgrade-icon {
+body .game-main .item-shop .items .item-cart .item-icon {
   width: 80px;
   height: 80px;
 }
 
-body .game-main .item-shop .upgrades .upgrade-cart .upgrade-info {
+body .game-main .item-shop .items .item-cart .item-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +235,12 @@ body .game-main .item-shop .upgrades .upgrade-cart .upgrade-info {
   padding: 20px;
 }
 
-body .game-main .item-shop .upgrades .upgrade-cart .upgrade-btn {
+body .game-main .item-shop .items .item-cart .item-description {
+  text-align: center;
+  margin: 20px 0;
+}
+
+body .game-main .item-shop .items .item-cart .item-btn {
   width: 100%;
   padding: 15px;
   border: 2px solid #617be3;
