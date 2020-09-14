@@ -60,10 +60,10 @@ body {
             }
         }
 
-        .item-shop {
+        .shop {
             @include flex-center;
             flex-direction: column;
-            .shop-heading {
+            .heading {
                 font-size: 30px;
             }
             .items {
@@ -72,40 +72,38 @@ body {
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                .item-cart {
+                .cart {
                     width: 100%;
                     margin: 10px 20px;
                     @include flex-center;
                     flex-direction: column;
-                    .item-name {
+                    .name {
                         font-size: 20px;
                         text-align: center;
                         padding: 10px;
                     }
-                    .item-icon {
+                    .icon {
                         width: 80px;
                         height: 80px;
                         
                     }
-                    .item-info {
+                    .info {
                         display: flex;
                         justify-content: space-between;
                         align-content: center;
                         margin: 0 auto;
-                        width: 80%;
+                        width: 100%;
                         padding: 20px;
                     }
-                    .item-description {
+                    .description {
                         text-align: center;
                         margin: 20px 0;
                     }
                     .item-btn {
-                        width: 100%;
-                        padding: 15px;
-                        border: 2px solid #617be3;
-                        background-color: #4a69bb;
-                        font-size: 20px;
-                        color: white;
+                        @include btn;
+                    }
+                    .upgrade-btn {
+                        @include btn;
                     }
                     
                 }

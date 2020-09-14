@@ -3,3 +3,12 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin btn {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #617be3;
+    background-color: #4a69bb;
+    font-size: 20px;
+    color: white;
+}

@@ -13,7 +13,7 @@
     <header class="header-app">
         <h1 class="heading">KorpoKliker</h1>
         <h2 class="work-position">STANOWISKO</h2>
-        <h2 class="current-position"></h2>
+        <p class="current-position"></p>
     </header>
     <main class="game-main">
         <section class="money">
@@ -31,67 +31,133 @@
         <section class="clicker">
             <button class="earn-money">KLIKAJ !</button>
         </section>
-        <section class="item-shop">
-            <h2 class="shop-heading">Sklep</h1>
+
+        <!-- ITEMS  -->
+
+        <section class="item-shop shop">
+            <h2 class="shop-heading heading">Sklep</h1>
+                <div class="items">
+                    <div class="item-cart cart">
+                        <h3 class="item-name name">
+                            Stworzenie raportu
+                        </h3>
+                        <img src="/icons/svg/036-accounting.svg" class="item-icon icon" alt="accounting-icon">
+                        <div class="item-info info">
+                            <p class="item-price-first item-price"></p>
+                            <p class="item-amount-first item-amount"></p>
+                        </div>
+                        <p class="item-description description">Każde kupienie dodaje +1 do kliknięcia.</p>
+                        <button class="first-item item-btn" data-id="1">
+                            Kup !
+                        </button>
+                    </div>
+                    <div class="item-cart cart">
+                        <h3 class="item-name name">Sprzedaż produktu</h3>
+                        <img src="/icons/svg/003-trade.svg" class="item-icon icon" alt="trade-icon">
+                        <div class="item-info info">
+                            <p class="item-price-second item-price">Koszt: </p>
+                            <p class="item-amount-second item-amount">Ilość: </p>
+                        </div>
+                        <p class="item-description description">Każde kupienie dodaje +2 do kliknięcia.</p>
+                        <button class="second-item item-btn" data-id="2">
+                            Kup !
+                        </button>
+                    </div>
+                    <div class="item-cart cart">
+                        <h3 class="item-name name">Pozyskanie klienta</h3>
+                        <img src="/icons/svg/024-human-resources.svg" class="item-icon icon" alt="humanresources-icon">
+                        <div class="item-info info">
+                            <p class="item-price-third item-price">Koszt: </p>
+                            <p class="item-amount-third item-amount">Ilość: </p>
+                        </div>
+                        <p class="item-description description">Każde kupienie dodaje +1 kasy na sekudne.</p>
+                        <button class="third-item item-btn" data-id="3">
+                            Kup !
+                        </button>
+                    </div>
+                    <div class="item-cart cart">
+                        <h3 class="item-name name">Stworzenie nowego produktu</h3>
+                        <img src="/icons/svg/008-packaging.svg" class="item-icon icon" alt="packagign-icon">
+                        <div class="item-info info">
+                            <p class="item-price">Koszt: </p>
+                            <p class="item-amount">Ilość: </p>
+                        </div>
+                        <p class="item-description description">Każde kupienie dodaje +2 kasy na sekudne i +3 kasy na klikniecie.
+                        </p>
+                        <button class="fourth-item item-btn" data-id="4">
+                            Kup !
+                        </button>
+                    </div>
+                    <div class="item-cart cart">
+                        <h3 class="item-name name">Eksport produktu</h3>
+                        <img src="/icons/svg/033-real-estate.svg" class="item-icon icon" alt="realestate-icon">
+                        <div class="item-info info">
+                            <p class="item-price">Koszt: </p>
+                            <p class="item-amount">Ilość: </p>
+                        </div>
+                        <p class="item-description description">Każde kupienie dodaje +3 kasy na sekudne i +4 kasy na klikniecie.
+                        </p>
+                        <button class="fifth-item item-btn" data-id="5">
+                            Kup !
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- UPGRADES -->
+
+        <section class="upgrade-shop shop">
+            <h2 class="upgrade-heading heading">Ulepszenia</h2>
             <div class="items">
-                <div class="item-cart">
-                    <h3 class="item-name">
-                        Stworzenie raportu
-                    </h3>
-                    <img src="/icons/svg/036-accounting.svg" class="item-icon" alt="accounting-icon">
-                    <div class="item-info">
-                        <p class="item-price-first item-price"></p>
-                        <p class="item-amount-first"></p>
+                <div class="upgrade-cart cart">
+                    <h3 class="upgrade-name name">Wiedza</h3>
+                    <img src="/icons/svg/020-knowledge.svg" alt="knowadge-icon" class="upgrade-icon icon">
+                    <div class="upgrade-info info">
+                        <p class="upgrade-status"></p>
+                        <p class="upgrade-price"></p>
                     </div>
-                    <p class="item-description">Każde kupienie dodaje +1 do kliknięcia.</p>
-                    <button class="first-item item-btn">
-                        Kup !
-                    </button>
+                    <p class="upgrade-description description">Dzięki temu ulepszeniu Stworzenie raportu daje +2 kasy za kliknięcie. </p>
+                    <button class="upgrade-btn" data-id="1">Kup !</button>
                 </div>
-                <div class="item-cart">
-                    <h3 class="item-name">Sprzedaż produktu</h3>
-                    <img src="/icons/svg/003-trade.svg" class="item-icon" alt="trade-icon">
-                    <div class="item-info">
-                        <p class="item-price-second item-price">Koszt: </p>
-                        <p class="item-amount-second">Ilość: </p>
+                <div class="upgrade-cart cart">
+                    <h3 class="upgrade-name name">Klient</h3>
+                    <img src="/icons/svg/030-customer.svg" alt="knowadge-icon" class="upgrade-icon icon">
+                    <div class="upgrade-info info">
+                        <p class="upgrade-status"></p>
+                        <p class="upgrade-price"></p>
                     </div>
-                    <p class="item-description">Każde kupienie dodaje +2 do kliknięcia.</p>
-                    <button class="second-item item-btn">
-                        Kup !
-                    </button>
+                    <p class="upgrade-description description">Dzięki temu ulepszeniu Sprzedaż Produktu daje +4 kasy za kliknięcie.</p>
+                    <button class="upgrade-btn" data-id="2">Kup !</button>
                 </div>
-                <div class="item-cart">
-                    <h3 class="item-name">Pozyskanie klienta</h3>
-                    <img src="/icons/svg/024-human-resources.svg" class="item-icon" alt="humanresources-icon">
-                    <div class="item-info">
-                        <p class="item-price-third item-price">Koszt: </p>
-                        <p class="item-amount">Ilość: </p>
+                <div class="upgrade-cart cart">
+                    <h3 class="upgrade-name name">Przywódca</h3>
+                    <img src="/icons/svg/018-leadership.svg" alt="knowadge-icon" class="upgrade-icon icon">
+                    <div class="upgrade-info info">
+                        <p class="upgrade-status"></p>
+                        <p class="upgrade-price"></p>
                     </div>
-                    <button class="third-item item-btn">
-                        Kup !
-                    </button>
+                    <p class="upgrade-description description">Dzięki temu ulepszeniu Pozyskanie Klienta daje +2 kasy na sekunde.</p>
+                    <button class="upgrade-btn" data-id="3">Kup !</button>
                 </div>
-                <div class="item-cart">
-                    <h3 class="item-name">Stworzenie nowego produktu</h3>
-                    <img src="/icons/svg/008-packaging.svg" class="item-icon" alt="packagign-icon">
-                    <div class="item-info">
-                        <p class="item-price-fourth item-price">Koszt: </p>
-                        <p class="item-amount">Ilość: </p>
+                <div class="upgrade-cart cart">
+                    <h3 class="upgrade-name name">Własny produkt</h3>
+                    <img src="/icons/svg/009-process-1.svg" alt="knowadge-icon" class="upgrade-icon icon">
+                    <div class="upgrade-info info">
+                        <p class="upgrade-status"></p>
+                        <p class="upgrade-price"></p>
                     </div>
-                    <button class="fourth-item item-btn">
-                        Kup !
-                    </button>
+                    <p class="upgrade-description description">Dzięki temu ulepszeniu Stworzenie nowego produktu daje +3 kasy na sekudne.</p>
+                    <button class="upgrade-btn" data-id="4">Kup !</button>
                 </div>
-                <div class="item-cart">
-                    <h3 class="item-name">Eksport produktu</h3>
-                    <img src="/icons/svg/033-real-estate.svg" class="item-icon" alt="realestate-icon">
-                    <div class="item-info">
-                        <p class="item-price-fifth item-price">Koszt: </p>
-                        <p class="item-amount">Ilość: </p>
+                <div class="upgrade-cart cart">
+                    <h3 class="upgrade-name name">Rynek światowy</h3>
+                    <img src="/icons/svg/017-marketing.svg" alt="knowadge-icon" class="upgrade-icon icon">
+                    <div class="upgrade-info info">
+                        <p class="upgrade-status"></p>
+                        <p class="upgrade-price"></p>
                     </div>
-                    <button class="fifth-item item-btn">
-                        Kup !
-                    </button>
+                    <p class="upgrade-description description">Dzięki temu ulepszeniu Eskport produktu daje +8 kasy na klikniecie.</p>
+                    <button class="upgrade-btn" data-id="5">Kup !</button>
                 </div>
             </div>
         </section>

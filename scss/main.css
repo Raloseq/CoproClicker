@@ -155,7 +155,7 @@ body .game-main .clicker .earn-money {
   cursor: pointer;
 }
 
-body .game-main .item-shop {
+body .game-main .shop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,11 +171,11 @@ body .game-main .item-shop {
           flex-direction: column;
 }
 
-body .game-main .item-shop .shop-heading {
+body .game-main .shop .heading {
   font-size: 30px;
 }
 
-body .game-main .item-shop .items {
+body .game-main .shop .items {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +192,7 @@ body .game-main .item-shop .items {
           align-items: center;
 }
 
-body .game-main .item-shop .items .item-cart {
+body .game-main .shop .items .cart {
   width: 100%;
   margin: 10px 20px;
   display: -webkit-box;
@@ -210,18 +210,18 @@ body .game-main .item-shop .items .item-cart {
           flex-direction: column;
 }
 
-body .game-main .item-shop .items .item-cart .item-name {
+body .game-main .shop .items .cart .name {
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
 
-body .game-main .item-shop .items .item-cart .item-icon {
+body .game-main .shop .items .cart .icon {
   width: 80px;
   height: 80px;
 }
 
-body .game-main .item-shop .items .item-cart .item-info {
+body .game-main .shop .items .cart .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,16 +231,25 @@ body .game-main .item-shop .items .item-cart .item-info {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   padding: 20px;
 }
 
-body .game-main .item-shop .items .item-cart .item-description {
+body .game-main .shop .items .cart .description {
   text-align: center;
   margin: 20px 0;
 }
 
-body .game-main .item-shop .items .item-cart .item-btn {
+body .game-main .shop .items .cart .item-btn {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #617be3;
+  background-color: #4a69bb;
+  font-size: 20px;
+  color: white;
+}
+
+body .game-main .shop .items .cart .upgrade-btn {
   width: 100%;
   padding: 15px;
   border: 2px solid #617be3;
